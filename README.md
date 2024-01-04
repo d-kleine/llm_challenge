@@ -57,6 +57,7 @@ The *.env* file should look like the following:
 For further information, please visit [Get up and running with the OpenAI API](https://platform.openai.com/docs/quickstart?context=python)
  
 **Step 4: Run the app**
+
 Run `main.py` to fetch relevant papers from the arXiv API, combine information from the top 5 most semantically similar papers to predefined questions, and generate answers using OpenAI GPT-3.5 Turbo. The script employs the `ArxivPaperFetcher` class to retrieve papers, extract information, and calculate semantic similarities, while the `OpenAIQuestionAnswerer` class interacts with the OpenAI API to provide comprehensive answers. Customize the predefined questions to suit your needs, and the script outputs individual question-answer pairs along with a complete response summary.
 
 ```bash
