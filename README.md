@@ -9,6 +9,7 @@ The objective is to rapidly comprehend the diverse applications of Llama-2 by de
 * Use Git for documenting the development process
 * Choose between an open-source model or GPT 3.5-Turbo
 * Evaluate functionality using sample questions, including inquiries about Llama-2's successful applications, promising areas of use, domain-specific LLMs created by fine-tuning, and details about the model structure.
+* All queries should be limited to a single connection
 
 ## Requirements
 
@@ -41,8 +42,7 @@ Install the dependencies from the *requirements.txt* file:
 pip install -r requirements.txt
 ```
 
-For further information, please visit [Get up and running with the OpenAI API
-](https://platform.openai.com/docs/quickstart?context=python)
+For further information, please visit [Get up and running with the OpenAI API](https://platform.openai.com/docs/quickstart?context=python)
 
 **Step 4: Set up OpenAI API key**
 
@@ -51,12 +51,13 @@ You can either add the
 To set up an API key for a single project, create a local *.env* file in the project folder and add the key as OPENAI_API_KEY. Also, create a *.gitignore* file in the project root to ensure the *.env file* is not included in version control. After creating the files, copy the secret API key into the .env file.
 
 The *.env* file should look like the following:
-```bash
-OPENAI_API_KEY=sk-xxxxxxxxxx
-```
+
+```OPENAI_API_KEY=sk-...```
+
+For further information, please visit [Get up and running with the OpenAI API](https://platform.openai.com/docs/quickstart?context=python)
  
 **Step 4: Run the app**
-Run `main.py` to ...
+Run `main.py` to fetch relevant papers from the arXiv API, combine information from the top 5 most semantically similar papers to predefined questions, and generate answers using OpenAI GPT-3.5 Turbo. The script employs the `ArxivPaperFetcher` class to retrieve papers, extract information, and calculate semantic similarities, while the `OpenAIQuestionAnswerer` class interacts with the OpenAI API to provide comprehensive answers. Customize the predefined questions to suit your needs, and the script outputs individual question-answer pairs along with a complete response summary.
 
 ```bash
 python main.py
