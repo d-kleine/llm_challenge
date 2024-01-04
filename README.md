@@ -1,2 +1,2 @@
 # llm_challenge
-LLM assessment for ArXiv Chatbot
+LLM assessment for ArXiv chatbot
