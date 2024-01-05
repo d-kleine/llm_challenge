@@ -56,7 +56,7 @@ The *.env* file should look like the following:
 
 For further information, please visit [Get up and running with the OpenAI API](https://platform.openai.com/docs/quickstart?context=python)
  
-**Step 4: Run the app**
+**Step 5: Run the app**
 
 Run `main.py` to fetch relevant papers from the arXiv API, combine information from the top 5 most semantically similar papers to predefined questions, and generate answers using OpenAI GPT-3.5 Turbo. The script employs the `ArxivPaperFetcher` class to retrieve papers, extract information, and calculate semantic similarities, while the `OpenAIQuestionAnswerer` class interacts with the OpenAI API to provide comprehensive answers. Customize the predefined questions to suit your needs, and the script outputs individual question-answer pairs along with a complete response summary.
 
@@ -64,3 +64,21 @@ Run `main.py` to fetch relevant papers from the arXiv API, combine information f
 python main.py
 ```
 
+Sample output for example questions:
+```
+Question: For which tasks has Llama-2 already been used successfully?
+Answer: Llama 2 has been successfully used for a wide range of tasks, including dialogue tasks, language modeling, instruction following, writing assistance, financial news analytics and table to text generation.
+
+Question: What are promising areas of application for Llama-2?
+Answer: Promising areas of application for Llama-2 include dialogue, legal domain knowledge, writing assistance, and table to text generation. In dialogue, the model has already shown strong performance on various benchmark datasets. It can also be used for legal domain knowledge, enabling LLMs to answer legal domain queries and leverage domain-specific knowledge. In writing assistance, fine-tuning Llama 2 on writing instruction data has been shown to significantly improve its ability on writing tasks. Additionally, Llama 2 can be used for table to text generation, incorporating reasoning information into the input by highlighting relevant table-specific row data.
+
+Question: Name at least 5 domain-specific LLMs that have been created by fine-tuning Llama-2.
+Answer: 1. Lawyer LLaMa: A legal domain LLM for resolving domain-related problems.
+2. Writing Assistant LLM: A model built for writing assistance tasks.
+3. Financial News LLM: A model fine-tuned for analyzing financial news.
+4. Clinical LLaMa-LoRA: A PEFT adapter layer trained using clinical notes.
+5. Downstream LLaMa-LoRA: A PEFT adapter layer specialised for downstream tasks.
+
+Question: What can you find out about the model structure of Llama-2 (required memory, required computing capacity, number of parameters, available quantizations)?
+Answer: Llama-2 models range from 7 billion to 70 billion parameters. The 7 billion parameter model requires 2.5TB of memory and 4 to 5 cloud TPUv3 cores for best performance. The 70 billion parameter model requires a 24TB of memory and 128 TPUv3 cores for best performance. Llama-2 models can be quantized into 8 or 16-bit versions depending on the type of compression required.
+```
