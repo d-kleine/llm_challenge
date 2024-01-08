@@ -46,7 +46,7 @@ For further information, please visit [Get up and running with the OpenAI API](h
 
 **Step 4: Set up OpenAI API key**
 
-You can either add the 
+You can either add the API key for all projects globally as an environment variable or setting the API key for a single project.
 
 To set up an API key for a single project, create a local *.env* file in the project folder and add the key as OPENAI_API_KEY. Also, create a *.gitignore* file in the project root to ensure the *.env file* is not included in version control. After creating the files, copy the secret API key into the .env file.
 
