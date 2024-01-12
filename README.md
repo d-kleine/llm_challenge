@@ -3,7 +3,7 @@
 ## Task
 This initiative aims to simplify and enhance knowledge building within the team. Exploration is underway to potentially replace OpenAI's GPT APIs with Meta's Llama-2 technology in various projects, driven by the consideration of achieving privacy-compliant implementation on company servers.
 
-The objective is to rapidly comprehend the diverse applications of Llama-2 by developing a Question-Answering System based on scientific publications from [Arxiv.org](https://arxiv.org). This approach seeks to provide thorough insights into Llama-2's functionality and use cases, facilitating informed decision-making regarding its integration into projects.
+The objective is to rapidly comprehend the diverse applications of Llama-2 by developing a Question-Answering System based on scientific publications from [arXiv.org](https://arxiv.org). This approach seeks to provide thorough insights into Llama-2's functionality and use cases, facilitating informed decision-making regarding its integration into projects.
 
 ## Demands:
 * Use Git for documenting the development process
