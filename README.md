@@ -42,8 +42,6 @@ Install the dependencies from the *requirements.txt* file:
 pip install -r requirements.txt
 ```
 
-For further information, please visit [Get up and running with the OpenAI API](https://platform.openai.com/docs/quickstart?context=python)
-
 **Step 4: Set up OpenAI API key**
 
 You can either add the API key for all projects globally as an environment variable or setting the API key for a single project.
@@ -54,7 +52,7 @@ The *.env* file should look like the following:
 
 ```OPENAI_API_KEY=sk-...```
 
-For further information, please visit [Get up and running with the OpenAI API](https://platform.openai.com/docs/quickstart?context=python)
+For further information to step 1 to 4, please visit [Get up and running with the OpenAI API](https://platform.openai.com/docs/quickstart?context=python).
  
 **Step 5: Run the app**
 
